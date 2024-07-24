@@ -1,0 +1,12 @@
+{
+    "name": "QR Code Reader",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "A QR Code Reader",
+    "icons": {
+        "1": "icons/1.png"
+    },
+    "action": {
+        "default_popup": "popup/popup.html"
+    }
+}
