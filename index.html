@@ -1,3 +1,4 @@
+<!-- Copyright 2026 Zozimus Technologies -->
 <!DOCTYPE html>
 <html lang="en">
  
@@ -10,6 +11,7 @@
           content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
           href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>QR Scanner
     </title>
     <link
@@ -22,7 +24,13 @@
  
 <body>
     <div class="container">
-        <h1>Scan QR Codes</h1>
+        <div class="header-top">
+            <h1>Scan QR Codes</h1>
+            <a href="https://wise.com/pay/business/sandeepchadda?utm_source=open_link" class="donate-btn" target="_blank" title="Support us on Wise">
+                <i class="fas fa-heart"></i>
+                <span>Donate</span>
+            </a>
+        </div>
         <div class="section">
             <div id="my-qr-reader">
             </div>
@@ -30,6 +38,9 @@
                 The result is:
             </div>
         </div>
+        <footer class="copyright">
+            &copy; 2026 Zozimus Technologies
+        </footer>
     </div>
     <script
         src="https://unpkg.com/html5-qrcode">

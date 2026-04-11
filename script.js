@@ -1,3 +1,5 @@
+// Copyright 2026 Zozimus Technologies
+
 function domReady(fn) {
     if (
         document.readyState === "complete" ||
