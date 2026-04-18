@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3d7ea6"/>
+      <stop offset="100%" stop-color="#1a4a6e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Browser chrome -->
+  <rect width="1280" height="800" rx="12" fill="#2b2b2b"/>
+  <!-- Tab bar -->
+  <rect x="0" y="0" width="1280" height="40" rx="12" fill="#1e1e1e"/>
+  <rect x="0" y="12" width="1280" height="28" fill="#1e1e1e"/>
+  <!-- Active tab -->
+  <rect x="8" y="8" width="200" height="32" rx="8" fill="#2b2b2b"/>
+  <circle cx="24" cy="24" r="6" fill="#3d7ea6"/>
+  <text x="38" y="28" font-family="'Segoe UI', sans-serif" font-size="12" fill="#cccccc">QR Scanner</text>
+  <!-- Window controls -->
+  <circle cx="1220" cy="20" r="6" fill="#ff5f57"/>
+  <circle cx="1240" cy="20" r="6" fill="#febc2e"/>
+  <circle cx="1260" cy="20" r="6" fill="#28c840"/>
+  <!-- URL bar -->
+  <rect x="0" y="40" width="1280" height="40" fill="#323232"/>
+  <rect x="180" y="48" width="920" height="24" rx="12" fill="#1e1e1e"/>
+  <text x="210" y="65" font-family="'Segoe UI', sans-serif" font-size="13" fill="#888888">chrome-extension://qrcodereader/index.html</text>
+
+  <!-- Page content area with gradient bg -->
+  <rect x="0" y="80" width="1280" height="720" fill="url(#bgGrad)"/>
+
+  <!-- Center card -->
+  <g transform="translate(390, 120)">
+    <!-- Container -->
+    <rect width="500" height="580" rx="16" fill="transparent"/>
+
+    <!-- Header -->
+    <rect x="160" y="0" width="40" height="40" rx="8" fill="rgba(255,255,255,0.15)"/>
+    <rect x="168" y="8" width="24" height="24" rx="4" fill="#ffffff" opacity="0.8"/>
+    <text x="210" y="30" font-family="'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Scan QR Codes</text>
+
+    <!-- Red donate button -->
+    <rect x="410" y="4" width="90" height="32" rx="16" fill="#e53935"/>
+    <text x="427" y="25" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#ffffff">♥ Donate</text>
+
+    <!-- QR Scanner card -->
+    <rect x="0" y="56" width="500" height="420" rx="16" fill="#ffffff"/>
+
+    <!-- Scanner area -->
+    <rect x="24" y="76" width="452" height="300" rx="12" fill="#f5f5f5" stroke="rgba(0,0,0,0.08)" stroke-width="1"/>
+
+    <!-- Camera icon in scanner -->
+    <rect x="190" y="160" width="120" height="100" rx="12" fill="rgba(61,126,166,0.1)"/>
+    <text x="215" y="225" font-family="'Segoe UI', sans-serif" font-size="48" fill="rgba(61,126,166,0.4)">📷</text>
+
+    <!-- Camera button -->
+    <rect x="140" y="290" width="220" height="36" rx="8" fill="#3d7ea6"/>
+    <text x="176" y="314" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500" fill="#ffffff">Request Camera Permissions</text>
+
+    <!-- Scan type link -->
+    <text x="180" y="360" font-family="'Segoe UI', sans-serif" font-size="13" fill="#1d9bf0">Scan an Image File</text>
+
+    <!-- Result section -->
+    <rect x="0" y="395" width="500" height="50" rx="12" fill="#ffffff" stroke="rgba(0,0,0,0.06)" stroke-width="1"/>
+    <text x="24" y="425" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" fill="#333333">The result is:</text>
+
+    <!-- Footer -->
+    <text x="150" y="500" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="rgba(255,255,255,0.7)">© 2026 Zozimus Technologies</text>
+  </g>
+</svg>
