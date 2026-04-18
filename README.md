@@ -4,7 +4,7 @@
 
 A fast, private, and free QR code scanner available as a **web app** and a **browser extension** for Microsoft Edge and Chromium-based browsers.
 
-**Web App:** https://the-qrcode-reader.netlify.app
+**Web App:** [https://the-qrcode-reader.netlify.app](https://the-qrcode-reader.netlify.app)
 
 ---
 
@@ -60,14 +60,6 @@ Hosted on Netlify at https://the-qrcode-reader.netlify.app. The `web/` folder is
 ## Browser Extension
 
 A self-contained Manifest V3 extension that bundles the html5-qrcode library locally. Clicking the extension icon opens the QR scanner in a new tab.
-
-### Install from Source
-
-1. Clone this repository
-2. Open `edge://extensions` (or `chrome://extensions`)
-3. Enable **Developer mode**
-4. Click **Load unpacked** and select the `extension/` folder
-5. Click the QR Code Reader icon in the toolbar to start scanning
 
 ### Permissions
 
