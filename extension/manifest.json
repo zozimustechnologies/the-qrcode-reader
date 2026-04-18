@@ -4,18 +4,20 @@
   "description": "Scan and read QR codes",
   "version": "1.0",
   "permissions": [],
-  "host_permissions": [
-    "https://the-qrcode-reader.netlify.app/*"
-  ],
   "action": {
-    "default_title": "QR Code Reader"
+    "default_title": "QR Code Reader",
+    "default_icon": {
+      "16": "images/icon-16.png",
+      "48": "images/icon-48.png",
+      "128": "images/icon-128.png"
+    }
   },
   "background": {
     "service_worker": "background.js"
   },
   "icons": {
-    "16": "images/1.ico",
-    "48": "images/1.ico",
-    "128": "images/1.ico"
+    "16": "images/icon-16.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
   }
 }

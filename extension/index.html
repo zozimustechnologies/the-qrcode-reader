@@ -1,28 +1,45 @@
+<!-- Copyright 2026 Zozimus Technologies -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Code Reader</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            border: none;
-        }
-        body {
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-        }
-        iframe {
-            width: 100%;
-            height: 100%;
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>QR Scanner</title>
+    <link rel="icon" href="images/icon-48.png" type="image/png" sizes="48x48">
+    <link rel="icon" href="images/icon-16.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
 </head>
+
 <body>
-    <iframe src="https://the-qrcode-reader.netlify.app" allow="camera" allowfullscreen></iframe>
+    <div class="container">
+        <div class="header-top">
+            <div class="brand">
+                <img src="images/logo.svg" alt="QR Scanner Logo" class="logo">
+                <h1>Scan QR Codes</h1>
+            </div>
+            <a href="https://wise.com/pay/business/sandeepchadda?utm_source=open_link" class="donate-btn" target="_blank" title="Support us on Wise">
+                <i class="fas fa-heart"></i>
+                <span>Donate</span>
+            </a>
+        </div>
+        <div class="section">
+            <div id="my-qr-reader"></div>
+            <div id="result" class="result">
+                The result is:
+            </div>
+        </div>
+        <footer class="copyright">
+            &copy; 2026 <a href="https://github.com/zozimustechnologies" target="_blank">Zozimus Technologies</a>
+        </footer>
+    </div>
+    <script src="html5-qrcode.min.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

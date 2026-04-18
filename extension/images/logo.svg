@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3d7ea6"/>
+      <stop offset="100%" stop-color="#1a4a6e"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5ba3cc"/>
+      <stop offset="100%" stop-color="#3d7ea6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded background -->
+  <rect width="512" height="512" rx="96" ry="96" fill="url(#brandGrad)"/>
+
+  <!-- QR code pattern (stylized) -->
+  <!-- Top-left finder -->
+  <rect x="72" y="72" width="120" height="120" rx="16" fill="#ffffff"/>
+  <rect x="88" y="88" width="88" height="88" rx="10" fill="url(#brandGrad)"/>
+  <rect x="108" y="108" width="48" height="48" rx="6" fill="#ffffff"/>
+
+  <!-- Top-right finder -->
+  <rect x="320" y="72" width="120" height="120" rx="16" fill="#ffffff"/>
+  <rect x="336" y="88" width="88" height="88" rx="10" fill="url(#brandGrad)"/>
+  <rect x="356" y="108" width="48" height="48" rx="6" fill="#ffffff"/>
+
+  <!-- Bottom-left finder -->
+  <rect x="72" y="320" width="120" height="120" rx="16" fill="#ffffff"/>
+  <rect x="88" y="336" width="88" height="88" rx="10" fill="url(#brandGrad)"/>
+  <rect x="108" y="356" width="48" height="48" rx="6" fill="#ffffff"/>
+
+  <!-- Data modules (decorative dots) -->
+  <rect x="224" y="80" width="36" height="36" rx="6" fill="rgba(255,255,255,0.85)"/>
+  <rect x="224" y="132" width="36" height="36" rx="6" fill="rgba(255,255,255,0.5)"/>
+  <rect x="272" y="80" width="36" height="36" rx="6" fill="rgba(255,255,255,0.5)"/>
+
+  <rect x="80" y="224" width="36" height="36" rx="6" fill="rgba(255,255,255,0.85)"/>
+  <rect x="132" y="224" width="36" height="36" rx="6" fill="rgba(255,255,255,0.5)"/>
+  <rect x="80" y="272" width="36" height="36" rx="6" fill="rgba(255,255,255,0.5)"/>
+
+  <rect x="224" y="224" width="36" height="36" rx="6" fill="rgba(255,255,255,0.9)"/>
+  <rect x="272" y="224" width="36" height="36" rx="6" fill="rgba(255,255,255,0.45)"/>
+  <rect x="224" y="272" width="36" height="36" rx="6" fill="rgba(255,255,255,0.45)"/>
+  <rect x="272" y="272" width="36" height="36" rx="6" fill="rgba(255,255,255,0.7)"/>
+
+  <rect x="340" y="224" width="36" height="36" rx="6" fill="rgba(255,255,255,0.5)"/>
+  <rect x="392" y="224" width="36" height="36" rx="6" fill="rgba(255,255,255,0.85)"/>
+  <rect x="340" y="272" width="36" height="36" rx="6" fill="rgba(255,255,255,0.7)"/>
+  <rect x="392" y="272" width="36" height="36" rx="6" fill="rgba(255,255,255,0.45)"/>
+
+  <rect x="224" y="340" width="36" height="36" rx="6" fill="rgba(255,255,255,0.5)"/>
+  <rect x="272" y="340" width="36" height="36" rx="6" fill="rgba(255,255,255,0.85)"/>
+  <rect x="224" y="392" width="36" height="36" rx="6" fill="rgba(255,255,255,0.7)"/>
+  <rect x="272" y="392" width="36" height="36" rx="6" fill="rgba(255,255,255,0.45)"/>
+
+  <!-- Bottom-right decorative cluster -->
+  <rect x="340" y="340" width="36" height="36" rx="6" fill="rgba(255,255,255,0.85)"/>
+  <rect x="392" y="340" width="36" height="36" rx="6" fill="rgba(255,255,255,0.6)"/>
+  <rect x="340" y="392" width="36" height="36" rx="6" fill="rgba(255,255,255,0.45)"/>
+  <rect x="392" y="392" width="36" height="36" rx="6" fill="rgba(255,255,255,0.9)"/>
+
+  <!-- Scanner line (animated feel) -->
+  <rect x="56" y="248" width="400" height="4" rx="2" fill="#ffffff" opacity="0.3"/>
+  <rect x="56" y="248" width="400" height="4" rx="2" fill="#ffffff" opacity="0.9">
+    <animate attributeName="y" values="72;440;72" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.9;0.4;0.9" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Corner brackets (scanner frame) -->
+  <!-- Top-left bracket -->
+  <path d="M56 100 L56 60 Q56 44 72 44 L100 44" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+  <!-- Top-right bracket -->
+  <path d="M412 44 L440 44 Q456 44 456 60 L456 100" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+  <!-- Bottom-left bracket -->
+  <path d="M56 412 L56 440 Q56 456 72 456 L100 456" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+  <!-- Bottom-right bracket -->
+  <path d="M412 456 L440 456 Q456 456 456 440 L456 412" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+</svg>

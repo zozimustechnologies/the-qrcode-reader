@@ -15,12 +15,12 @@ domReady(function () {
  
     // If found you qr code
     function onScanSuccess(decodeText, decodeResult) {
-        document.getElementById("result").innerHTML = "The result is: " + decodeText;
+        document.getElementById("result").textContent = "The result is: " + decodeText;
     }
  
     let htmlscanner = new Html5QrcodeScanner(
         "my-qr-reader",
-        { fps: 10, qrbos: 250 }
+        { fps: 10, qrbox: 250 }
     );
     htmlscanner.render(onScanSuccess);
 
