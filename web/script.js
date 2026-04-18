@@ -16,14 +16,45 @@ domReady(function () {
     // If found you qr code
     function onScanSuccess(decodeText, decodeResult) {
         var resultEl = document.getElementById("result");
+        resultEl.innerHTML = '';
+
+        var label = document.createElement('span');
+        label.textContent = 'The result is: ';
+        resultEl.appendChild(label);
+
+        var isUrl = false;
         try {
             var url = new URL(decodeText);
             if (url.protocol === 'http:' || url.protocol === 'https:') {
-                resultEl.innerHTML = 'The result is: <a href="' + url.href + '" target="_blank" rel="noopener noreferrer">' + url.href + '</a>';
-                return;
+                isUrl = true;
+                var link = document.createElement('a');
+                link.href = url.href;
+                link.textContent = url.href;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+                resultEl.appendChild(link);
             }
         } catch (e) {}
-        resultEl.textContent = "The result is: " + decodeText;
+
+        if (!isUrl) {
+            var text = document.createElement('span');
+            text.textContent = decodeText;
+            resultEl.appendChild(text);
+        }
+
+        var copyBtn = document.createElement('button');
+        copyBtn.className = 'copy-btn';
+        copyBtn.title = 'Copy to clipboard';
+        copyBtn.innerHTML = '<i class="fas fa-copy"></i>';
+        copyBtn.addEventListener('click', function () {
+            navigator.clipboard.writeText(decodeText).then(function () {
+                copyBtn.innerHTML = '<i class="fas fa-check"></i>';
+                setTimeout(function () {
+                    copyBtn.innerHTML = '<i class="fas fa-copy"></i>';
+                }, 1500);
+            });
+        });
+        resultEl.appendChild(copyBtn);
     }
  
     let htmlscanner = new Html5QrcodeScanner(

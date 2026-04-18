@@ -103,6 +103,8 @@ button:hover {
     font-family: Roboto !important;
     font-size: 13px !important;
     color: #555 !important;
+    display: inline-block !important;
+    margin-bottom: 8px !important;
 }
 
 video {
@@ -125,6 +127,42 @@ video {
     color: #333;
     font-size: 14px;
     line-height: 1.5;
+}
+
+.result a {
+    color: #3d7ea6;
+    text-decoration: underline;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.result a:hover {
+    color: #1a4a6e;
+}
+
+.copy-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    margin-left: 8px;
+    background: #f0f2f5;
+    border: none;
+    border-radius: 8px;
+    color: #555;
+    font-size: 14px;
+    cursor: pointer;
+    vertical-align: middle;
+    transition: 0.2s all ease;
+}
+
+.copy-btn:hover {
+    background: #3d7ea6;
+    color: #fff;
+    transform: none;
+    box-shadow: none;
 }
 
 .copyright {
