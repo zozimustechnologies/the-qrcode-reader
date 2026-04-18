@@ -69,9 +69,42 @@ button:hover {
  
 #html5-qrcode-anchor-scan-type-change {
     text-decoration: none !important;
-    color: #1d9bf0;
+    color: #3d7ea6;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 13px;
 }
- 
+
+#my-qr-reader select {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    font-family: Roboto;
+    font-size: 14px;
+    color: #333;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s all ease;
+}
+
+#my-qr-reader select:focus {
+    border-color: #3d7ea6;
+    box-shadow: 0 0 0 3px rgba(61, 126, 166, 0.15);
+}
+
+#my-qr-reader span {
+    font-family: Roboto !important;
+    font-size: 13px !important;
+    color: #555 !important;
+}
+
 video {
     width: 100% !important;
     border: 1px solid rgba(0, 0, 0, 0.08) !important;
@@ -92,6 +125,17 @@ video {
     color: #333;
     font-size: 14px;
     line-height: 1.5;
+}
+
+.result a {
+    color: #3d7ea6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.result a:hover {
+    text-decoration: underline;
+    color: #1a4a6e;
 }
 
 .copyright {

@@ -15,7 +15,15 @@ domReady(function () {
  
     // If found you qr code
     function onScanSuccess(decodeText, decodeResult) {
-        document.getElementById("result").textContent = "The result is: " + decodeText;
+        var resultEl = document.getElementById("result");
+        try {
+            var url = new URL(decodeText);
+            if (url.protocol === 'http:' || url.protocol === 'https:') {
+                resultEl.innerHTML = 'The result is: <a href="' + url.href + '" target="_blank" rel="noopener noreferrer">' + url.href + '</a>';
+                return;
+            }
+        } catch (e) {}
+        resultEl.textContent = "The result is: " + decodeText;
     }
  
     let htmlscanner = new Html5QrcodeScanner(
