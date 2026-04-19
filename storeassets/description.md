@@ -57,6 +57,7 @@ QR Code Reader does **not** collect, store, transmit, or share any personal data
 
 ### Support & Feedback
 
+- **Homepage:** https://zozimustechnologies.github.io/the-qrcode-reader/
 - **Website:** https://the-qrcode-reader.netlify.app
 - **Source Code:** https://github.com/zozimustechnologies/the-qrcode-reader
 - **Issues & Feedback:** https://github.com/zozimustechnologies/the-qrcode-reader/issues

@@ -6,6 +6,8 @@ A fast, private, and free QR code scanner available as a **web app** and a **bro
 
 **Web App:** [https://the-qrcode-reader.netlify.app](https://the-qrcode-reader.netlify.app)
 
+**Homepage:** [https://zozimustechnologies.github.io/the-qrcode-reader/](https://zozimustechnologies.github.io/the-qrcode-reader/)
+
 ---
 
 ## Features
