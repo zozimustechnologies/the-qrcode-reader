@@ -6,7 +6,7 @@
   <title>QR Code Reader — Fast, Private QR Scanner</title>
   <meta name="description" content="A fast, private, and free QR code scanner available as a web app and a browser extension. Scan QR codes with your camera or by uploading an image — no data ever leaves your browser.">
   <meta name="theme-color" content="#3d7ea6">
-  <link rel="icon" type="image/png" href="extension/images/icon-48.png">
+  <link rel="icon" type="image/png" href="images/icon-48.png">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -288,9 +288,14 @@
 
     .screenshots img {
       width: 100%;
+      max-width: 560px;
       border-radius: var(--radius);
       border: 1px solid var(--border);
       box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    }
+
+    .screenshots {
+      justify-items: center;
     }
 
     /* ── Footer ── */
@@ -425,7 +430,7 @@
     <div class="steps">
       <div class="step">
         <h3>Install the extension</h3>
-        <p>Get it from the <a href="https://microsoftedge.microsoft.com/addons/detail/qr-code-reader/" target="_blank" rel="noopener">Edge Add-ons store</a> or load it unpacked from <code>edge://extensions</code>.</p>
+        <p>Get it from the <a href="https://microsoftedge.microsoft.com/addons/detail/qr-code-reader/" target="_blank" rel="noopener">Edge Add-ons store</a> or the <a href="https://the-qrcode-reader.netlify.app" target="_blank" rel="noopener">web app</a>.</p>
       </div>
       <div class="step">
         <h3>Click the icon</h3>
